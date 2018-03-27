@@ -1,0 +1,42 @@
+<!DOCYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	
+	<style>
+		a {
+			display: inline-block;
+			font-size: 25px;
+			background: lightgreen;
+			height: 50px;
+			width: 200px;
+			line-height: 50px;
+		}
+		.a{
+			position: relative;  /*relative 相对定位，作用如下 absolute绝对定位*/
+			left: 50px;  /*相对于页面左边框偏移了50像素*/
+			top: 50px;   /*相对于页面上边框偏移了50像素*/
+		}
+		.a{
+			position: absolute;
+			left: 50px  
+			top: 50px
+		}
+		div{
+			position: relative;
+			float: right;  	/*从右侧开始排序*/
+			width: 50px;
+			height: 500px;
+			background: lightblue;
+			bottom: 50px;
+		}
+		.b{
+			clear: left;
+		}
+	</style>
+</head>
+<body>
+	<a class="a" href="http://baidu.com">aaa</a>
+	<a class="a" href="http://baidu.com">bbb</a>
+</body>
