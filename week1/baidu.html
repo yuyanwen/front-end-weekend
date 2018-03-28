@@ -6,15 +6,33 @@
 	<title>百度一下，你就知道</title>
 	<style>
 		.a{
-			display: inline-block;
 			float: right;
-			list-style: none; /*li没有前面的黑点等东西;*/
+			list-style: none;
 			font-size: 13px;
-			font-weight: bold;
+			font-weight: bold; /*设置文本的粗细 normal：默认值，定义的标准字符 bold：定义粗体文字 bolder：定义更粗的文字 lighter：定义更细的文字 inherit：规定从父元素继承定义的字体的粗细 100-900：文字的粗细，400等同于normal，700等同于bold*/
 		}
-		.a a{
-			display: inline-block; /*让li横着排列;*/
-			margin-left: 0px;
+		.a li{
+			display: inline-block; /*display：规定属性应该生成的框的类型 block：块元素，独占一行，支持设置width，height（元素前后带有换行符） inline：行元素，不换行，不支持设置width，height（元素前后没有换行符） inline-block：类似行元素，支持设置width，height none：隐藏并脱离文档流（此元素不会被显示）*/
+			margin-left: 10px;
+		}
+		.a a:link{
+			color: rgb(7, 7, 7);
+		}
+		.a a:visited{
+			color: rgb(7, 7, 7);
+		}
+		.a a:hover{
+			color: rgb(41, 41, 179)
+		}
+		.a a:active{
+			color: rgb(41, 41, 179)
+		}
+		img.logo{
+			display: block;
+			width:400px;
+			margin-left: auto; /*auto：浏览器设置的左外边距*/
+			margin-right: auto;
+			clear: right; /*clear 规定元素的那一侧不允许其他浮动元素*/
 		}
 	</style>
 </head>
@@ -49,6 +67,8 @@
 			©2018 Baidu 
 			<a href="https://www.baidu.com/duty/">使用百度前必读</a>
 			<a href="http://jianyi.baidu.com/">意见反馈</a>
+			京ICP证030173号
+			<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">京公网安备11000002000001号</a>
 		</p>
 	</div>
 </body>
