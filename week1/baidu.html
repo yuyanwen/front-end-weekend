@@ -52,6 +52,32 @@
 		.search-button:hover{
 			color: blue;
 		}
+		.search-camera{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-image: url("E:/迅雷下载/week1/logo5.png");
+			background-repeat: no-repeat; /*设置是否重复背景图片*/
+			position: absolute; /*规定元素的定位类型 absolute：生成绝对定位的元素 relative：生成相对定位的元素*/
+			margin-left: -30px; /*将相机移入搜索框内*/     /*绝对定位：相对于元素最近的已定位的祖先元素（即是设置了绝对定位或者相对定位的祖先元素）。如果元素没有已定位的祖先元素，那么它的位置则是相对于最初的包含块（body）。可以覆盖页面上其他的元素，且可以通过z-index属性来控制这些层的对方顺序。  相对定位：相对于元素在文档中的初始位置——首先它出现在它所在的位置上（即不设置position时的位置，然后通过设置垂直或水平位置，让这个元素“相对于”它的原始起点进行移动。无论是否进行移动，元素仍然占据原来的空间。因此，移动元素会导致它覆盖其它框。*/
+			margin-top: 10px; /*调整相机上下位置使相机居中*/
+		}
+		.search-camera:hover{
+			background-position: 0 -20px; /*设置背景图片的起始位置 0为初始位置，即为图片上方的白色相机，-20为鼠标放上后图片的位置，即为图片下方的蓝色相机*/
+		}
+		img.ma{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 180px;
+			clear: right;
+		}
+		.ma-name{
+			text-align: center;
+			margin-top: 0%;
+			font-size: 4px;
+			color: rgb(102, 101, 101)
+		}
 	</style>
 </head>
 <body>
