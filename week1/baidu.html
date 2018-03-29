@@ -15,16 +15,16 @@
 			display: inline-block; /*display：规定属性应该生成的框的类型 block：块元素，独占一行，支持设置width，height（元素前后带有换行符） inline：行元素，不换行，不支持设置width，height（元素前后没有换行符） inline-block：类似行元素，支持设置width，height none：隐藏并脱离文档流（此元素不会被显示）*/
 			margin-left: 10px;
 		}
-		.a a:link{
+		.a a:link{ /*正常，未访问过的链接*/
 			color: rgb(7, 7, 7);
 		}
-		.a a:visited{
+		.a a:visited{ /*用户已访问过的链接*/
 			color: rgb(7, 7, 7);
 		}
-		.a a:hover{
+		.a a:hover{ /*用户鼠标放在链接上时*/
 			color: rgb(41, 41, 179)
 		}
-		.a a:active{
+		.a a:active{ /*链接被点击的那一刻*/
 			color: rgb(41, 41, 179)
 		}
 		img.logo{
@@ -33,6 +33,24 @@
 			margin-left: auto; /*auto：浏览器设置的左外边距*/
 			margin-right: auto;
 			clear: right; /*clear 规定元素的那一侧不允许其他浮动元素*/
+		}
+		.search{
+			text-align: center; /*规定元素中的文本的水平对齐方式*/
+		}
+		.search-word{
+			width: 550px;
+			height: 30px;
+		}
+		.search-button{
+			width: 90px;
+			height: 36px;
+			margin-left: -6px;/*设置元素的左外边距*/
+			vertical-align:bottom;/*设置元素的垂直对齐方式 bottom：	把元素的顶端与行中最低的元素的顶端对齐 */
+			background-color: #3385ff; /*百度一下按钮的背景颜色*/
+			color: #fff; /*百度一下字体的颜色*/
+		}
+		.search-button:hover{
+			color: blue;
 		}
 	</style>
 </head>
