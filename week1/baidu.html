@@ -65,6 +65,9 @@
 		.search-camera:hover{
 			background-position: 0 -20px; /*设置背景图片的起始位置 0为初始位置，即为图片上方的白色相机，-20为鼠标放上后图片的位置，即为图片下方的蓝色相机*/
 		}
+		.footer{
+			text-align: center;
+		}
 		img.ma{
 			display: block;
 			margin-left: auto;
@@ -73,12 +76,34 @@
 			clear: right;
 		}
 		.ma-name{
-			text-align: center;
 			margin-top: 0%;
 			font-size: 4px;
 			color: rgb(102, 101, 101)
 		}
-		
+		.footer-l{
+			list-style: none;
+			font-size: 10px;
+			margin-left: -30px;
+			margin-right: auto;
+		}
+		.footer-l li{
+			display: inline-block;
+		}
+		.footer p{
+			font-size: 10px;
+		}
+		.footer a:link{
+			color: rgb(104, 104, 104)
+		}
+		.footer a:visited{
+			color: rgb(104, 104, 104)
+		}
+		.footer a:hover{
+			color: rgb(104, 104, 104)
+		}
+		.footer a:active{
+			color: rgb(104, 104, 104)
+		}
 	</style>
 </head>
 <body>
@@ -102,7 +127,7 @@
 	<div class="footer">
 		<img class="ma" alt="二维码" src="E:/迅雷下载/week1/logo3.png">
 		<p class="ma-name">百度</p>
-		<ul>
+		<ul class="footer-l">
 			<li><a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a></li>
 			<li><a href="http://home.baidu.com/">关于百度</a></li>
 			<li><a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-irhome">About Baidu</a></li>
