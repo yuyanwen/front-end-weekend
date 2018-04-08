@@ -10,7 +10,7 @@
             min-width: 600px; /*设置元素的最小宽度*/
             max-width: 1080px; /*设置元素的最大宽度*/
             margin: 0 auto; /*在一个声明中设置所有外边距属性 上下边距是0.左右边距由浏览器设定*/
-            overflow: hidden;
+            overflow: hidden; /*overflow规定当内容溢出元素框时发生的事 hidden：内容会被修剪，并且其余内容是不可见的*/
             position: relative;
         }
         .personal{
@@ -45,13 +45,33 @@
         }
         .personal .self-introduce{
             padding: 20px;/*设置p元素与边框之间的间距*/
+            font-size: 15px;
         }
         .self-introduce .ma{
             padding: 20px;
         }
-        .main{
+        .per{
             width: 70%;
             margin-left: 31%;
+        }
+        .per-header{
+            overflow: hidden;
+        }
+        .per-header .per-details{
+            box-sizing: border-box;
+            width: 50%;
+            height: 550px;
+            color: rgb(189, 189, 189);
+            float: left;
+            padding: 20px;
+            background-color: rgb(163, 35, 35);
+        }
+        .per-details .photo{
+            margin-top: 0;
+            text-align: center;
+            width: 210px;
+            height: 210px;
+            border-radius: 100%;
         }
     </style>
 </head> 
@@ -78,22 +98,23 @@
     </div>
         <div class="per">
             <div class="per-header">
-                <img class="photo" src="E:/迅雷下载/week1/绘梨衣1.png" alt="photo">
-                    <h2>个人资料</h2>  
-                    <ul>
-                        <li>中文名：上杉绘梨衣</li>
-                        <li>外
-                            文名：上杉絵梨衣</li>
-                        <li>生日：1991年12月25日</li>
-                        <li>年龄：21（已故）</li>
-                        <li>性别：女</li>
-                        <li>身高：172cm</li>
-                        <li>体重：47kg</li>
-                        <li>发色：暗红色</li>
-                        <li>瞳色：深玫瑰红色</li>
-                        <li>言灵：审判（111号高危言灵）</li>
-                        <li>喜欢的人：Sakura</li>
-                    </ul>
+                <div class="per-details">
+                    <img class="photo" src="E:/迅雷下载/week1/绘梨衣1.png" alt="photo">
+                        <h2>个人资料</h2>  
+                        <ul>
+                            <li>中文名：上杉绘梨衣</li>
+                            <li>外文名：上杉絵梨衣</li>
+                            <li>生日：1991年12月25日</li>
+                            <li>年龄：21（已故）</li>
+                            <li>性别：女</li>
+                            <li>身高：172cm</li>
+                            <li>体重：47kg</li>
+                            <li>发色：暗红色</li>
+                            <li>瞳色：深玫瑰红色</li>
+                            <li>言灵：审判（111号高危言灵）</li>
+                            <li>喜欢的人：Sakura</li>
+                        </ul>
+                </div>
             </div>
             <img class="photo1" src="E:/迅雷下载/week1/绘梨衣1.png">
         </div>
